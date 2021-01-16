@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tina Lo portfolio</title>
+    <link rel="icon" href="./image/logo2-01.png" width="100px" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.css" />
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      color: #fff;
+      background-color: #8a8a8a;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  </style>
+  <body>
+    <div class="pt-5 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills">
+              <a href="index.html">
+                <img src="./image/logo.png" width="90px"
+              /></a>
+              <li class="nav-item">
+                <a href="logo_design.html" class="nav-link">Logo</a>
+              </li>
+              <li class="nav-item">
+                <a href="web_design.html" class="nav-link">Web-Frontend</a>
+              </li>
+              <li class="nav-item">
+                <a href="gra_design.html" class="nav-link">Graphic</a>
+              </li>
+              <li class="nav-item">
+                <a href="pro_design.html" class="nav-link">Product</a>
+              </li>
+              <li class="nav-item">
+                <a href="li_design.html" class="nav-link">Lighting</a>
+              </li>
+              <li class="nav-item">
+                <a href="arch_design.html" class="active nav-link"
+                  >Architecture interior</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="photo_design.html" class="nav-link">photography</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler navbar-toggler-right border-0 p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar20"
+        >
+          <p class="navbar-brand text-white mb-0">
+            <i class="fa d-inline fa-lg fa-user-circle"></i>Tina Lo
+          </p>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar20">
+          <ul class="navbar-nav mr-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fa fa-user fa-fw"></i>About me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="logo_design.html">Portfolio</a>
+            </li>
+          </ul>
+          <p class="d-none d-md-block lead text-white pr-0 ml-0 mx-auto mb-0">
+            Design
+          </p>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#"> </a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="py-3 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="p-1 col-md-6">
+            <figure class="figure">
+              <img
+                style="height: 255px; width: 510px"
+                class="img-fluid d-block shadow rounded"
+                onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                onmouseout="this.style.cursor='default'"
+                src="./image/arch/arch_1.jpg"
+                onclick="javascript:showimage('./image/arch/arch_1.jpg');"
+              />
+              <figcaption
+                class="figure-caption text-right"
+                style="margin-top: 10px"
+              >
+                <b>斯圖加特教堂室內再設計</b>
+                <br />
+                <p style="font-size: 14px">使用技術 : 透明紙</p>
+              </figcaption>
+            </figure>
+            <h2 class="my-3"><b></b></h2>
+          </div>
+          <div
+            class="modal fade bs-example-modal-lg text-center"
+            id="imgModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myLargeModalLabel"
+          >
+            <div
+              class="modal-dialog modal-lg"
+              style="display: inline-block; width: auto"
+            >
+              <div class="modal-content">
+                <img
+                  id="imgInModalID"
+                  class="carousel-inner img-responsive img-rounded"
+                  onclick="closeImageViewer()"
+                  onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                  onmouseout="this.style.cursor='default'"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="p-1 col-md-6">
+            <figure class="figure">
+              <img
+                style="height: 255px; width: 510px"
+                class="img-fluid d-block shadow rounded"
+                onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                onmouseout="this.style.cursor='default'"
+                src="./image/arch/arch_2.jpg"
+                onclick="javascript:showimage('./image/arch/arch_2.jpg');"
+              />
+              <figcaption
+                class="figure-caption text-right"
+                style="margin-top: 10px"
+              >
+                <b>阿爾卑斯山木屋室內改造</b>
+                <br />
+                <p style="font-size: 14px">
+                  使用技術 : AutoCAD、透視圖繪製、紙板模型
+                </p>
+              </figcaption>
+            </figure>
+            <h2 class="my-3"><b></b></h2>
+          </div>
+          <div
+            class="modal fade bs-example-modal-lg text-center"
+            id="imgModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myLargeModalLabel"
+          >
+            <div
+              class="modal-dialog modal-lg"
+              style="display: inline-block; width: auto"
+            >
+              <div class="modal-content">
+                <img
+                  id="imgInModalID"
+                  class="carousel-inner img-responsive img-rounded"
+                  onclick="closeImageViewer()"
+                  onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                  onmouseout="this.style.cursor='default'"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="p-1 col-md-6">
+            <figure class="figure">
+              <img
+                style="height: 255px; width: 510px"
+                class="img-fluid d-block shadow rounded"
+                onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                onmouseout="this.style.cursor='default'"
+                src="./image/arch/arch_3.jpg"
+                onclick="javascript:showimage('./image/arch/arch_3.jpg');"
+              />
+              <figcaption
+                class="figure-caption text-right"
+                style="margin-top: 10px"
+              >
+                <b>改善室內潮濕環境+室外植物澆水</b>
+                <br />
+                <p style="font-size: 14px">
+                  使用技術 : AutoCAD、SketchUp、Illustrator
+                </p>
+              </figcaption>
+            </figure>
+            <h2 class="my-3"><b></b></h2>
+          </div>
+          <div
+            class="modal fade bs-example-modal-lg text-center"
+            id="imgModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myLargeModalLabel"
+          >
+            <div
+              class="modal-dialog modal-lg"
+              style="display: inline-block; width: auto"
+            >
+              <div class="modal-content">
+                <img
+                  id="imgInModalID"
+                  class="carousel-inner img-responsive img-rounded"
+                  onclick="closeImageViewer()"
+                  onmouseover="this.style.cursor='pointer';this.style.cursor='hand'"
+                  onmouseout="this.style.cursor='default'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+  function showimage(source) {
+    $("#imgModal").find("#imgInModalID").attr("src", source);
+    $("#imgModal").modal();
+  }
+
+  function closeImageViewer() {
+    $("#imgModal").modal("hide");
+  }
+</script>
